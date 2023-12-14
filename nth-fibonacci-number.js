@@ -7,7 +7,7 @@ function fibonacci(n) {
 		fibonacciArr[1] = fibonacciArr[0] + fibonacciArr[1];
 		fibonacciArr[0] = fibonacciArr[0] + fibonacciArr[1];
 		if(i === n/2){
-		const nthFibonacci = `${fibonacciArr[0]}`.replace(`n`,'');
+		const nthFibonacci = `${fibonacciArr[0]}`;
 		return nthFibonacci;
 		}
 	}
