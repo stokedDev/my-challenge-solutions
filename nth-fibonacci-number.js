@@ -3,12 +3,9 @@
 /* My Solution */
 function fibonacci(n) {
 	const fibonacciArr = [0n,1n];
-	for(let i = 1; i <= n; i++){
-		fibonacciArr[1] = fibonacciArr[0] + fibonacciArr[1];
-		fibonacciArr[0] = fibonacciArr[0] + fibonacciArr[1];
-		if(i === n/2){
-		const nthFibonacci = `${fibonacciArr[0]}`;
-		return nthFibonacci;
+	for(let i = 2; i <= n; i++){
+		fibonacciArr.push(fibonacciArr[0] + fibonacciArr[1]);
+		fibonacciArr.shift();
 		}
-	}
+	return `${fibonacciArr[1]}`;
 }
