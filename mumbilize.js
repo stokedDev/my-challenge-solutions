@@ -1,4 +1,5 @@
 /* This challenge begun this morning between 7:30AM and 8:30AM of this day January 11, 2024; */
+/* Add two characters at beginning in parameter received argument */
 
 function mumbilizeStr(str){
 	let resultStr = '';
@@ -22,3 +23,4 @@ function mumbilizeStr(str){
 	}
 	return resultStr;
 }
+mumbilizeStr(str);
